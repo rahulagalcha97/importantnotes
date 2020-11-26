@@ -14,3 +14,8 @@ Integrations: https://defectdojo.readthedocs.io/en/latest/integrations.html
 
 curl --location --request POST 'http://52.14.220.159:8080/api/v2/import-scan/' --header 'Authorization: Token 301fec2b582e884436617f35a5cdf9e19399a' --form 'engagement=6' --form 'verified=true' --form 'active=true' --form 'scan_type=Gitleaks Scan' --form 'file=@/var/lib/jenkins/gitscan1.json
 '
+
+--> gitleaks command to scan for repo
+
+$gitleaks --repo=https://github.com/rahulagalcha97/JavaVulnerableLab.git --config=gitleaks-back.toml --report-format=json --report=gitscan.json
+
